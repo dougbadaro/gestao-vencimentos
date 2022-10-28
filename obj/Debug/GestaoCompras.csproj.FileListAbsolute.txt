@@ -1,0 +1,12 @@
+G:\thisisbadaro\IFNMG\Programação Visual\GestaoCompras\bin\Debug\GestaoCompras.exe.config
+G:\thisisbadaro\IFNMG\Programação Visual\GestaoCompras\bin\Debug\GestaoCompras.exe
+G:\thisisbadaro\IFNMG\Programação Visual\GestaoCompras\bin\Debug\GestaoCompras.pdb
+G:\thisisbadaro\IFNMG\Programação Visual\GestaoCompras\obj\Debug\GestaoCompras.csproj.AssemblyReference.cache
+G:\thisisbadaro\IFNMG\Programação Visual\GestaoCompras\obj\Debug\GestaoCompras.csproj.SuggestedBindingRedirects.cache
+G:\thisisbadaro\IFNMG\Programação Visual\GestaoCompras\obj\Debug\GestaoCompras.Properties.Resources.resources
+G:\thisisbadaro\IFNMG\Programação Visual\GestaoCompras\obj\Debug\GestaoCompras.csproj.GenerateResource.cache
+G:\thisisbadaro\IFNMG\Programação Visual\GestaoCompras\obj\Debug\GestaoCompras.csproj.CoreCompileInputs.cache
+G:\thisisbadaro\IFNMG\Programação Visual\GestaoCompras\obj\Debug\GestaoCompras.exe
+G:\thisisbadaro\IFNMG\Programação Visual\GestaoCompras\obj\Debug\GestaoCompras.pdb
+G:\thisisbadaro\IFNMG\Programação Visual\GestaoCompras\obj\Debug\GestaoCompras.WindowMain.resources
+G:\thisisbadaro\IFNMG\Programação Visual\GestaoCompras\obj\Debug\GestaoCompras.WindowTodosLotes.resources

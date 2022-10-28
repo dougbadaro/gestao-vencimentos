@@ -12,9 +12,23 @@ namespace GestaoCompras
 {
     public partial class Sobre : Form
     {
+
+        private static Sobre instance;
         public Sobre()
         {
             InitializeComponent();
+        }
+
+        public static Sobre GetInstance()
+        {
+
+            if ( instance == null || instance.IsDisposed)
+            {
+
+                instance = new Sobre();
+            }
+
+            return instance;
         }
     }
 }

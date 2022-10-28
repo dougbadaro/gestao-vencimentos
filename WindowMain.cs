@@ -66,7 +66,7 @@ namespace GestaoCompras
 
         private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Sobre sobre = new Sobre();
+            Sobre sobre = Sobre.GetInstance();
             sobre.MdiParent = this;
             sobre.WindowState = FormWindowState.Normal;
             sobre.Show();

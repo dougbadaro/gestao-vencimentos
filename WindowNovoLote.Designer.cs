@@ -75,6 +75,11 @@
             this.nudQuantidade.Name = "nudQuantidade";
             this.nudQuantidade.Size = new System.Drawing.Size(100, 20);
             this.nudQuantidade.TabIndex = 4;
+            this.nudQuantidade.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.nudQuantidade.ValueChanged += new System.EventHandler(this.nudQuantidade_ValueChanged);
             // 
             // lblQuantidade

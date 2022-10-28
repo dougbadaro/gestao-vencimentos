@@ -39,6 +39,10 @@ namespace GestaoCompras
             Compra compra = new Compra((Produto) comboBox1.SelectedItem, dateTimePicker1.Value.Date, dateTimePicker2.Value.Date, Convert.ToInt16(nudQuantidade.Value));
 
             BancoDadosSimulado.Compras.Add(compra);
+            comboBox1.SelectedIndex = 0;
+            nudQuantidade.Value = 1;
+            dateTimePicker1.Value = DateTime.Now;
+            dateTimePicker2.Value = DateTime.Now;
         }
 
         private void HabilitarBotao()
@@ -57,6 +61,8 @@ namespace GestaoCompras
 
         private void nudQuantidade_ValueChanged(object sender, EventArgs e)
         {
+
+            nudQuantidade.Maximum = 100;
 
             HabilitarBotao();
         }

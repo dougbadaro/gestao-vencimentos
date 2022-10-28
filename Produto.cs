@@ -10,7 +10,23 @@ namespace GestaoCompras
     {
 
         public Int64 Codigo { get; set; }
-        public String Nome { get; set; }
+
+        private String _nome;
+        public String Nome
+        {
+            get { return _nome; }
+            set
+            {
+                if (value.Length > 45)
+                {
+                    _nome = value.Substring(0, 45);
+                }
+                else
+                {
+                    _nome = value;
+                }
+            }
+        }
         public Decimal Preco { get; set; }
 
         public Produto()

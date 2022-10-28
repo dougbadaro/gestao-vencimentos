@@ -63,5 +63,13 @@ namespace GestaoCompras
             wnovolote.WindowState = FormWindowState.Normal;
             wnovolote.Show();
         }
+
+        private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Sobre sobre = new Sobre();
+            sobre.MdiParent = this;
+            sobre.WindowState = FormWindowState.Normal;
+            sobre.Show();
+        }
     }
 }

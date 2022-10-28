@@ -66,13 +66,14 @@
             // sobreToolStripMenuItem
             // 
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sobreToolStripMenuItem.Text = "Sobre";
+            this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sairToolStripMenuItem.Text = "Sair";
             // 
             // cadastroToolStripMenuItem
@@ -86,7 +87,7 @@
             // novoLoteToolStripMenuItem
             // 
             this.novoLoteToolStripMenuItem.Name = "novoLoteToolStripMenuItem";
-            this.novoLoteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.novoLoteToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.novoLoteToolStripMenuItem.Text = "Novo lote";
             this.novoLoteToolStripMenuItem.Click += new System.EventHandler(this.novoLoteToolStripMenuItem_Click);
             // 

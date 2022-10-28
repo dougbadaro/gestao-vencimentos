@@ -35,6 +35,14 @@ namespace GestaoCompras
         {
 
             dgvVencerUm.DataSource = BancoDadosSimulado.PesquisaCompra(1);
+
+            OcultarColunas();
+        }
+
+        private void OcultarColunas()
+        {
+
+            dgvVencerUm.Columns[2].Visible = false;
         }
     }
 }

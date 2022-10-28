@@ -42,15 +42,17 @@
             this.dgvCincoDias.Name = "dgvCincoDias";
             this.dgvCincoDias.ReadOnly = true;
             this.dgvCincoDias.RowHeadersVisible = false;
-            this.dgvCincoDias.Size = new System.Drawing.Size(450, 328);
+            this.dgvCincoDias.Size = new System.Drawing.Size(602, 328);
             this.dgvCincoDias.TabIndex = 0;
             // 
             // WindowVencerCinco
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(450, 328);
+            this.ClientSize = new System.Drawing.Size(602, 328);
             this.Controls.Add(this.dgvCincoDias);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "WindowVencerCinco";
             this.Text = "A vencer em até 5 dias";
             this.Load += new System.EventHandler(this.WindowVencerCinco_Load);

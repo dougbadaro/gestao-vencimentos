@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,24 +12,31 @@ namespace GestaoCompras
     {
 
         public static List<Produto> Produtos { get; set; }
-        public static List<Compra> Compras { get; set; }
+        public static BindingList<Compra> Compras { get; set; }
 
         public BancoDadosSimulado()
         {
 
             Produtos = new List<Produto>();
-            Produtos.Add(new Produto(2200001, "Computer", 4560.57m));
-            Produtos.Add(new Produto(2200002, "LapTop", 4560.57m));
-            Produtos.Add(new Produto(2200003, "TV", 4560.57m));
-            Produtos.Add(new Produto(2200004, "Bike", 4560.57m));
+            Produtos.Add(new Produto(0, "Selecione o produto", 0));
+            Produtos.Add(new Produto(1, "Abobora", 12.20m));
+            Produtos.Add(new Produto(2, "Abacaxi", 20.00m));
+            Produtos.Add(new Produto(3, "Abacate", 30.00m));
+            Produtos.Add(new Produto(4, "Banana", 40.00m));
+            Produtos.Add(new Produto(5, "Caju", 50.00m));
+            Produtos.Add(new Produto(6, "Cajá", 60.00m));
+            Produtos.Add(new Produto(7, "Damasco", 70.00m));
+            Produtos.Add(new Produto(8, "Ervilha", 80.00m));
+            Produtos.Add(new Produto(9, "Framboesa", 90.00m));
+            Produtos.Add(new Produto(10, "Goiaba", 100.00m));
 
-            Compras = new List<Compra>();
+            Compras = new BindingList<Compra>();
         }
 
-        public static List<Compra> PesquisaCompra(Double dias)
+        public static BindingList<Compra> PesquisaCompra(Double dias)
         {
 
-            List<Compra> PesquisaCompra = new List<Compra>();
+            BindingList<Compra> PesquisaCompra = new BindingList<Compra>();
 
             foreach (Compra compra in BancoDadosSimulado.Compras)
             {
@@ -43,10 +51,10 @@ namespace GestaoCompras
             return PesquisaCompra;
         }
 
-        public static List<Compra> PesquisaCompraPersonalizada(DateTime selecteddataprimary, DateTime selecteddatasecundary)
+        public static BindingList<Compra> PesquisaCompraPersonalizada(DateTime selecteddataprimary, DateTime selecteddatasecundary)
         {
 
-            List<Compra> PesquisaCompra = new List<Compra>();
+            BindingList<Compra> PesquisaCompra = new BindingList<Compra>();
 
             foreach (Compra compra in BancoDadosSimulado.Compras)
             {

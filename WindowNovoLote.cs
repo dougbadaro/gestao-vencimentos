@@ -14,14 +14,10 @@ namespace GestaoCompras
     {
 
         private static WindowNovoLote instance;
-        private Compra compraaux;
         public WindowNovoLote()
         {
             InitializeComponent();
 
-            compraaux = new Compra();
-
-            //lblLote.Text = $"{compraaux.Lote}";
             comboBox1.DataSource = BancoDadosSimulado.Produtos;
         }
 
@@ -40,9 +36,35 @@ namespace GestaoCompras
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
 
-            Compra compra = new Compra(dateTimePicker1.Value, dateTimePicker2.Value, Convert.ToInt16(nudQuantidade.Value));
+            Compra compra = new Compra((Produto) comboBox1.SelectedItem, dateTimePicker1.Value.Date, dateTimePicker2.Value.Date, Convert.ToInt16(nudQuantidade.Value));
 
             BancoDadosSimulado.Compras.Add(compra);
+        }
+
+        private void HabilitarBotao()
+        {
+
+            if (nudQuantidade.Value > 0 && comboBox1.SelectedIndex > 0)
+            {
+
+                btnCadastrar.Enabled = true;
+            }
+            else
+            {
+                btnCadastrar.Enabled = false;
+            }
+        }
+
+        private void nudQuantidade_ValueChanged(object sender, EventArgs e)
+        {
+
+            HabilitarBotao();
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            HabilitarBotao();
         }
     }
 }

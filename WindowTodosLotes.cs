@@ -16,6 +16,10 @@ namespace GestaoCompras
         public WindowTodosLotes()
         {
             InitializeComponent();
+
+            dgvTodosLotes.DataSource = BancoDadosSimulado.Compras;
+
+            OcultarColunas();
         }
 
         public static WindowTodosLotes GetInstance()
@@ -28,6 +32,12 @@ namespace GestaoCompras
             }
 
             return instance;
+        }
+
+        private void OcultarColunas()
+        {
+
+            dgvTodosLotes.Columns[2].Visible = false;
         }
     }
 }

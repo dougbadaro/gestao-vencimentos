@@ -31,10 +31,18 @@ namespace GestaoCompras
             return instance;
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
         {
 
-            dgvPersonalizado.DataSource = BancoDadosSimulado.PesquisaCompraPersonalizada(dateTimePicker1.Value, dateTimePicker2.Value);
+            dgvPersonalizado.DataSource = BancoDadosSimulado.PesquisaCompraPersonalizada(dateTimePicker1.Value.Date, dateTimePicker2.Value.Date);
+
+            OcultarColunas();
+        }
+
+        private void OcultarColunas()
+        {
+
+            dgvPersonalizado.Columns[2].Visible = false;
         }
     }
 }

@@ -35,6 +35,14 @@ namespace GestaoCompras
         {
 
             dgvCincoDias.DataSource = BancoDadosSimulado.PesquisaCompra(5);
+
+            OcultarColunas();
+        }
+
+        private void OcultarColunas()
+        {
+
+            dgvCincoDias.Columns[2].Visible = false;
         }
     }
 }

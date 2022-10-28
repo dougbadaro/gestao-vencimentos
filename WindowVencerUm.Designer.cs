@@ -42,15 +42,17 @@
             this.dgvVencerUm.Name = "dgvVencerUm";
             this.dgvVencerUm.ReadOnly = true;
             this.dgvVencerUm.RowHeadersVisible = false;
-            this.dgvVencerUm.Size = new System.Drawing.Size(487, 329);
+            this.dgvVencerUm.Size = new System.Drawing.Size(602, 329);
             this.dgvVencerUm.TabIndex = 0;
             // 
             // WindowVencerUm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(487, 329);
+            this.ClientSize = new System.Drawing.Size(602, 329);
             this.Controls.Add(this.dgvVencerUm);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "WindowVencerUm";
             this.Text = "A vencer em até 1 dia";
             this.Load += new System.EventHandler(this.WindowVencerUm_Load);

@@ -17,11 +17,6 @@ namespace GestaoCompras
             InitializeComponent();
 
             new BancoDadosSimulado();
-
-            foreach (Compra compra in BancoDadosSimulado.Compras)
-            {
-                Console.WriteLine(compra);
-            }
         }
 
         private void mnuTodosLotes_Click(object sender, EventArgs e)
